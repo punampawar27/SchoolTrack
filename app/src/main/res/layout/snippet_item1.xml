@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingTop="8dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    >
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/firstLayout">
+    <ImageView
+        android:id="@+id/routeIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:paddingRight="5dp"
+        android:src="@drawable/bus_icon"/>
+
+    <TextView
+        android:id="@+id/routeNameTxt"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/routeIcon"
+        android:layout_alignWithParentIfMissing="true"
+        android:text="NOW TRACKING ROUTES"
+        android:textSize="13sp"
+        android:textAllCaps="true"
+        android:maxLength="27"
+        android:textColor="#FFFFFF" />
+    <ImageView
+        android:id="@+id/toggleBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="8dp"
+        android:src="@drawable/on_btn_g"
+        android:layout_toRightOf="@id/routeNameTxt"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_marginLeft="5dp"
+        />
+
+   <!-- <ToggleButton
+        android:id="@+id/toggleBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn=""
+        android:textOff=""
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_centerVertical="true"
+        android:background="@drawable/selector"
+        android:layout_toRightOf="@id/routeNameTxt"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_marginLeft="5dp"
+        />
+   --> <!--<Switch
+        android:id="@+id/toggleBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/routeNameTxt"
+    android:focusable="false"
+    android:background="@drawable/selector"
+        android:layout_marginLeft="5dp"
+        android:text="" />-->
+</RelativeLayout>
+    <View android:id="@+id/seperatorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_alignLeft="@id/firstLayout"
+        android:layout_below="@id/firstLayout"
+        android:background="@drawable/sap_line"
+        />
+</RelativeLayout>

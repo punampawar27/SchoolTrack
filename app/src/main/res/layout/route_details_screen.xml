@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+   <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent">
+
+       <RelativeLayout
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           >
+       <RelativeLayout android:id="@+id/firstLayout"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           >
+              <ImageView android:id="@+id/bannerImg"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/banner_img"
+                  android:scaleType="fitXY"
+              />
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp">
+           <TextView android:id="@+id/titleTxt"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="NEWSLETTER"
+               android:textSize="29sp"
+               android:textColor="#ffc50c"
+               />
+
+           <TextView android:id="@+id/bannerTxt"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="BANNER"
+               android:layout_marginTop="5dp"
+               android:layout_below="@+id/titleTxt"
+               android:textSize="15sp"
+               android:textColor="#ffffff"
+               />
+           <TextView android:id="@+id/descriptionTxt"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="EXAMPLE DEMO TEXT BANNER NEWSLETTER"
+               android:layout_below="@+id/bannerTxt"
+               android:layout_marginTop="5dp"
+               android:textSize="11sp"
+               android:textColor="#ffffff"
+               />
+</RelativeLayout>
+
+           </RelativeLayout>
+           <TextView android:id="@+id/reportTxt"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Reports"
+               android:textSize="18sp"
+               android:layout_marginTop="30dp"
+               android:layout_below="@id/firstLayout"
+               android:layout_alignLeft="@+id/layoutOne"/>
+        <LinearLayout android:id="@+id/layoutOne"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+         android:layout_below="@+id/reportTxt"
+         android:orientation="horizontal">
+           <ImageButton android:id="@+id/routeDetailImgBtn"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/route_details_icon"
+               android:scaleType="fitXY"
+               android:background="@null"
+               />
+            <Button android:id="@+id/allRouteImgBtn"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/all_routes_icon"
+                />
+            <ImageButton android:id="@+id/attendanceImgBtn"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/attendance_icon"
+                />
+</LinearLayout>
+           <LinearLayout android:id="@+id/layoutTwo"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+               android:layout_centerHorizontal="true"
+               android:layout_below="@id/layoutOne"
+               android:orientation="horizontal">
+               <ImageButton android:id="@+id/syllabusImgBtn"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/syllabus_icon"
+                   android:scaleType="fitXY"
+                   android:background="@null"
+                   />
+               <ImageButton android:id="@+id/childProgressImgBtn"
+                   android:layout_width="wrap_content"
+                   android:layout_marginLeft="15dp"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/child_progess_icon"
+                   android:scaleType="fitXY"
+                   android:background="@null"
+                   />
+               <ImageButton android:id="@+id/activityCenterImgBtn"
+                   android:layout_width="wrap_content"
+                   android:layout_marginLeft="15dp"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/activity_center_icon"
+                   android:scaleType="fitXY"
+                   android:background="@null"
+                   />
+           </LinearLayout>
+           <LinearLayout android:id="@+id/layoutThree"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+               android:layout_centerHorizontal="true"
+               android:layout_below="@id/layoutTwo"
+               android:orientation="horizontal">
+               <ImageButton android:id="@+id/pollsImgBtn"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/polls_icon"
+                   android:scaleType="fitXY"
+                   android:background="@null"
+                   />
+               <ImageButton android:id="@+id/moreOptionsImgBtn"
+                   android:layout_width="wrap_content"
+                   android:layout_marginLeft="15dp"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/more_options_icon"
+                   android:scaleType="fitXY"
+                   android:background="@null"
+                   />
+               <ImageButton android:id="@+id/logoutImgBtn"
+                   android:layout_width="wrap_content"
+                   android:layout_marginLeft="15dp"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/logout_icon"
+                   android:scaleType="fitXY"
+                   android:background="@null"
+                   />
+           </LinearLayout>
+
+           <include
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerHorizontal="true"
+               android:layout_centerVertical="true"
+               layout="@layout/progress_bar"
+               ></include>
+       </RelativeLayout>
+
+   </ScrollView>

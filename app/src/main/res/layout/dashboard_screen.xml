@@ -1,0 +1,35 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+    <!-- The main content view -->
+
+<include android:id="@+id/header"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    layout="@layout/header_layout"/>
+<!--
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/header"
+    android:src="@drawable/banner_img"
+     />
+-->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_marginTop="10dp"
+        android:id="@+id/fragmentContainer"></RelativeLayout>
+
+    <RelativeLayout android:id="@+id/transperent_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/header"
+        android:background="#7FFFFFFF"
+
+        android:visibility="gone"></RelativeLayout>
+
+</RelativeLayout>

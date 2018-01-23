@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/top_bg"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp">
+        <TextView
+            android:id="@+id/cameraHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:text="vcxvcxv"/>
+        <ImageView
+            android:id="@+id/backBtnFullScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+
+            android:src="@drawable/back_arrow"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/dashBoardLogo"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:visibility="gone"
+            android:src="@drawable/dashboard_logo_img" />
+
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/header">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+         />
+
+
+    <ImageView
+        android:id="@+id/leftArrow"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+       android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="7dp"
+        android:padding="7dp"
+        android:src="@drawable/back_arrow"/>
+
+    <ImageView
+        android:id="@+id/rightArrow"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="7dp"
+        android:padding="7dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/prev_arrow"/>
+</RelativeLayout>
+</RelativeLayout>

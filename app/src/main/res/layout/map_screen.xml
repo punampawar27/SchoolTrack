@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+   <!-- <include android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/header_layout"/>-->
+    <RelativeLayout android:id="@+id/header"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bg"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        >
+<RelativeLayout android:id="@+id/menuLayout" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:layout_centerVertical="true"
+    android:layout_alignParentLeft="true">
+        <ImageView android:id="@+id/menuBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:src="@drawable/map_menu_icon"
+            android:layout_centerVertical="true"
+            />
+    <ImageView android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        android:src="@drawable/back_arrow"
+        android:visibility="gone"
+        />
+</RelativeLayout>
+        <TextView android:id="@+id/dashBoardLogo"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@id/menuLayout"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:textSize="14sp"
+            android:text="GEO"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            />
+        <TextView android:id="@+id/dashBoardLogo2"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@id/dashBoardLogo"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="14sp"
+            android:text="TRAK"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/LastUpdatedTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="12sp"
+            android:textAllCaps="true"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:maxLength="25"
+            />
+        <TextView
+            android:id="@+id/LastUpdatedTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LAST UPDATE: "
+            android:layout_toLeftOf="@id/LastUpdatedTxt"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:textSize="12sp"
+            android:textAllCaps="true"
+            android:maxLength="25"
+            android:textColor="#FFFFFF" />
+
+
+    </RelativeLayout>
+    <fragment
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:id="@+id/map" tools:context=".MapActivity"
+        android:layout_below="@id/header"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+    <ImageView
+        android:id="@+id/refreshTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/header"
+        android:layout_margin="15dp"
+        android:src="@drawable/reload_icon"
+         />
+    <ImageView
+        android:id="@+id/cameraBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/refreshTxt"
+        android:layout_below="@id/header"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/camera_icon"
+
+        />
+
+
+    <RelativeLayout android:id="@+id/transperent_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/header"
+        android:background="#7FFFFFFF"
+        android:visibility="gone"></RelativeLayout>
+
+
+    <RelativeLayout android:id="@+id/leftLayout"
+      android:layout_width="300dp"
+      android:layout_height="fill_parent"
+      android:layout_below="@id/header"
+      android:visibility="gone"
+      android:background="@drawable/side_menu_bg">
+
+      <ListView android:id="@+id/routeListview"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:layout_gravity="start"
+          android:choiceMode="singleChoice"
+          android:divider="@android:color/transparent"
+          android:dividerHeight="0dp"
+          android:focusableInTouchMode="false"
+          />
+      <TextView
+          android:id="@+id/backToMenuTxt"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerHorizontal="true"
+          android:text="LogOut"
+          android:layout_alignParentBottom="true"
+          android:layout_above="@id/routeListview"
+          android:textSize="14sp"
+          android:textAllCaps="true"
+          android:padding="5dp"
+          android:layout_marginBottom="20dp"
+          android:textAppearance="?android:attr/textAppearanceListItemSmall"
+          android:textColor="#ffffff" />
+
+  </RelativeLayout>
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        layout="@layout/progress_bar"
+        ></include>
+
+
+</RelativeLayout>

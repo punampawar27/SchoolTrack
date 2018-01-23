@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tracked_route_text">#FFFF00</color>
+    <color name="white">#FFFFFF</color>
+    <color name="purple">#800080</color>
+
+</resources>

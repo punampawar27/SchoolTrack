@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">GeoTrak</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="login_screen_txt">Enter your login ID  and Password:</string>
+    <string name="login_account">Account:</string>
+    <string name="login_user">User:</string>
+    <string name="login_password">Password:</string>
+    <string name="login_btn">Login</string>
+
+    <string name="login_url">http://45.40.137.142:8080/webservices/login?</string>
+    <string name="loading">Loading</string>
+
+    <string name="password_empty_alert">Password can not be empty</string>
+    <string name="email_empty_alert">Please enter valid email</string>
+    <string name="account_empty_alert">Account can not be empty</string>
+    <string name="alert_message_header">Alert Message</string>
+    <string name="internet_alert_message">Please connect to internet...</string>
+    <string name="technical_error_message">Opps something went wrong please try after sometimes</string>
+
+
+    <string-array name="category_array">
+        <item>HOME</item>
+        <item>NEWSLETTER</item>
+        <item>NOTICE BOARD</item>
+        <item>ATTENDANCE</item>
+        <item>SYLLABS</item>
+        <item>CHILD PROGRESS</item>
+        <item>ACTIVITY CENTER</item>
+        <item>POLLS</item>
+        <item>SETTINGS</item>
+    </string-array>
+
+    <array name="icons">
+        <item>@drawable/side_menu_home_icon</item>
+        <item>@drawable/side_menu_newsletter_icon</item>
+        <item>@drawable/side_menu_notice_board_icon</item>
+        <item>@drawable/side_menu_attendance_icon</item>
+        <item>@drawable/side_menu_syllabus_icon</item>
+        <item>@drawable/side_menu_child_progress_icon</item>
+        <item>@drawable/side_menu_activity_icon</item>
+        <item>@drawable/side_menu_polls_icon</item>
+        <item>@drawable/side_menu_setting_icon</item>
+    </array>
+</resources>
